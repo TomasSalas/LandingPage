@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rakin-Tec - Software & BigData</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio,container-queries"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -65,9 +66,9 @@
 
   <main class="pt-20">
     <section id="inicio" class="container mx-auto px-6 py-16 h-[calc(100vh-80px)] flex flex-col justify-center">
-      <div class="flex flex-col md:flex-row w-full justify-center items-center gap-8">
-        <div class="flex flex-col w-full md:w-1/2 text-center">
-          <h1 class="text-6xl font-bold mb-4 text-rakin-gray">Bienvenido a Rakin-Tec</h1>
+      <div class="flex flex-col md:flex-row w-full justify-center items-center gap-8 mt-8">
+        <div class="flex flex-col w-full md:w-full text-center">
+          <h1 class="text-5xl font-bold mb-4 text-rakin-gray">Bienvenido a Rakin-Tec</h1>
           <p class="text-xl mb-8 text-rakin-gray">Soluciones innovadoras en Software y BigData</p>
           <div>
             <a href="#"
@@ -75,16 +76,16 @@
               más</a>
           </div>
         </div>
-        <div class="w-full md:w-1/2 mt-8 md:mt-0">
-          <img src="./assets/img-princi.png" alt="Imagen principal"
+        <div class="w-full md:w-full mt-8 md:mt-0">
+          <img src="./assets/img.svg" alt="Imagen principal"
             class="w-full h-auto max-w-md mx-auto object-contain">
         </div>
       </div>
     </section>
 
-    <section id="servicios" class="mx-auto px-6 py-16 h-[calc(100vh-80px)] flex flex-col justify-center bg-white">
+    <section id="servicios" class="mx-auto px-6 py-16 h-screen flex flex-col bg-white">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-8 text-center text-rakin-gray">Nuestros Servicios</h2>
+        <h2 class="text-5xl font-bold mb-8 text-center text-rakin-gray">Nuestros Servicios</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-gray-100 p-6 rounded-lg">
             <h3 class="text-xl font-semibold mb-4 text-rakin-orange">Desarrollo de Software</h3>
@@ -102,78 +103,89 @@
       </div>
     </section>
 
-    <section id="sobre-nosotros" class="container mx-auto px-4 py-16">
+    <section id="sobre-nosotros" class="container mx-auto px-4 py-16 h-screen">
       <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-6xl font-bold mb-4 text-rakin-gray">Nuestro equipo</h2>
+        <h2 class="text-5xl md:text-5xl font-bold mb-4 text-rakin-gray">Nuestro equipo</h2>
         <p class="text-lg md:text-xl text-rakin-gray">Presentamos el equipo de trabajo con el que cuenta Rakin-Tec</p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-        <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center transition duration-300 hover:scale-105 hover:bg-orange-100">
           <div class="w-48 h-48 mb-4 overflow-hidden rounded-full">
-            <img 
-              src="./assets/avatar.png" 
-              alt="Boris Ramirez Gajardo"
-              class="w-full h-full object-cover"
-            />
+            <img src="./assets/avatar.png" alt="Boris Ramirez Gajardo" class="w-full h-full object-cover" />
           </div>
-          <h3 class="text-xl font-semibold text-rakin-orange text-center">Boris Ramirez Gajardo</h3>
-          <h3 class="text-lg font-semibold text-rakin-gray text-center">CEO</h3>
+          <h3 class="text-xl font-bold text-rakin-orange text-center">Boris Ramirez Gajardo</h3>
+          <h3 class="text-md font-semibold text-rakin-gray text-center">CEO</h3>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center transition duration-300 hover:scale-105 hover:bg-orange-100">
           <div class="w-48 h-48 mb-4 overflow-hidden rounded-full">
-            <img 
-              src="./assets/avatar.png" 
-              alt="Maximiliano Vera Espinola"
-              class="w-full h-full object-cover"
-            />
+            <img src="./assets/avatar.png" alt="Maximiliano Vera Espinola" class="w-full h-full object-cover" />
           </div>
-          <h3 class="text-xl font-semibold text-rakin-orange text-center">Maximiliano Vera Espinola</h3>
-          <h3 class="text-lg font-semibold text-rakin-gray text-center">CTO</h3>
+          <h3 class="text-xl font-bold text-rakin-orange text-center">Maximiliano Vera Espinola</h3>
+          <h3 class="text-md font-semibold text-rakin-gray text-center">CTO</h3>
         </div>
       </div>
-    
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center transition duration-300 hover:scale-105 hover:bg-orange-100">
           <div class="w-48 h-48 mb-4 overflow-hidden rounded-full">
-            <img 
-              src="./assets/avatar.png" 
-              alt="Javier Jeldes Otarola"
-              class="w-full h-full object-cover"
-            />
+            <img src="./assets/avatar.png" alt="Javier Jeldes Otarola" class="w-full h-full object-cover" />
           </div>
-          <h3 class="text-xl font-semibold text-rakin-orange text-center">Javier Jeldes Otarola</h3>
-          <h3 class="text-lg font-semibold text-rakin-gray text-center">Analista Documentador</h3>
+          <h3 class="text-xl font-bold text-rakin-orange text-center">Javier Jeldes Otarola</h3>
+          <h3 class="text-md font-semibold text-rakin-gray text-center">Analista Documentador</h3>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center transition duration-300 hover:scale-105 hover:bg-orange-100">
           <div class="w-48 h-48 mb-4 overflow-hidden rounded-full">
-            <img 
-              src="./assets/avatar.png" 
-              alt="Tomas Salas Arancibia"
-              class="w-full h-full object-cover"
-            />
+            <img src="./assets/avatar.png" alt="Tomas Salas Arancibia" class="w-full h-full object-cover" />
           </div>
-          <h3 class="text-xl font-semibold text-rakin-orange text-center">Tomas Salas Arancibia</h3>
-          <h3 class="text-lg font-semibold text-rakin-gray text-center">Desarrollador Front-End</h3>
+          <h3 class="text-xl font-bold text-rakin-orange text-center">Tomas Salas Arancibia</h3>
+          <h3 class="text-md font-semibold text-rakin-gray text-center">Desarrollador Front-End</h3>
         </div>
-        <div class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center">
+        <div
+          class="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center transition duration-300 hover:scale-105 hover:bg-orange-100">
           <div class="w-48 h-48 mb-4 overflow-hidden rounded-full">
-            <img 
-              src="./assets/avatar.png" 
-              alt="Ricardo Espinoza Parra"
-              class="w-full h-full object-cover"
-            />
+            <img src="./assets/avatar.png" alt="Ricardo Espinoza Parra" class="w-full h-full object-cover" />
           </div>
-          <h3 class="text-xl font-semibold text-rakin-orange text-center">Ricardo Espinoza Parra</h3>
-          <h3 class="text-lg font-semibold text-rakin-gray text-center">Desarrollador Full-Stack</h3>
+          <h3 class="text-xl font-bold text-rakin-orange text-center">Ricardo Espinoza Parra</h3>
+          <h3 class="text-md font-semibold text-rakin-gray text-center">Desarrollador Full-Stack</h3>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="mx-auto px-6 py-16 h-[calc(100vh-80px)] flex flex-col justify-center bg-white">
+    <section id="contacto" class="mx-auto px-6 h-screen flex flex-col bg-white justify-center">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-8 text-center text-rakin-gray">Contacto</h2>
-        <p class="text-xl text-rakin-gray text-center">¡Contáctanos para impulsar tu negocio!</p>
+        <div>
+          <h2 class="text-5xl font-bold mb-8 text-center text-rakin-gray">Contacto</h2>
+          <p class="text-xl text-rakin-gray text-center">¡Contáctanos para impulsar tu negocio!</p>
+        </div>
+        <form>
+          <div class="flex md:flex-row flex-col gap-6 mt-6">
+            <input
+              required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="nombre" type="text" placeholder="Nombre">
+            <input
+              required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="apellido" type="text" placeholder="Apellido">
+          </div>
+          <div class="flex flex-row gap-6 mt-6">
+            <input
+             required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email" type="email" placeholder="Email">
+          </div>
+          <div class="flex flex-row gap-6 mt-6">
+            <textarea
+              required class="resize-none shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="mensaje" placeholder="Escribe tu mensaje aquí" rows="8"></textarea>
+          </div>
+          <div class="flex flex-row gap-8 mt-6">
+            <button type="submit" class="bg-rakin-orange text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition duration-300"> Enviar Información </button>
+          </div>
+        </form>
+      </div>
       </div>
     </section>
   </main>
